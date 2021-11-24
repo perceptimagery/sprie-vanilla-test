@@ -1,0 +1,16 @@
+{
+  "name": "demo-vanilla",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Abhishek Percept <abhishek@perceptimagery.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "static-server ./src"
+  },
+  "devDependencies": {
+    "static-server": "^2.2.1"
+  },
+  "dependencies": {
+    "sprie-sdk-cra-1": "^0.2.54"
+  }
+}
