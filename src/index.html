@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="./index.js"></script>
+    <script src="../iife.js" type="module"></script>
+
   </head>
   <body>
     <h1>Vanilla Demo</h1>
@@ -17,13 +19,24 @@
       <img src="https://tryon-3dmodels.s3.eu-west-2.amazonaws.com/thumbs/Vogue.png" height="200px" width="200px"/>
       <button id="item2" onclick="openWidget('ozsw')">Vogue</button>
     </div>
-    <script src="https://unpkg.com/sprie-sdk-cra-1@0.2.63/dist/iife.js" type="module"></script>
+    <div id="sprie">
+    </div>
+    <script src="https://unpkg.com/sprie-sdk-cra-1@0.2.90/dist/iife.js" type="module"></script>
+
+<!--    <script src="./iife.js" type="module"></script>-->
+
 
     <script>
-      Sprie.Render('sprie', { id: "bRP3"}, () => {});
+      console.log('window object--', Window, window)
+      Sprie.Load('sprie', { id: "knk1", apiKey:"320fc860da1d849a98"}, () => {});
       function openWidget(id) {
-        Sprie.Load('sprie', { id: id}, () => {});
+        Sprie.Load('sprie', { id: "knk3", apiKey:"320fc860da1d849a98"}, () => {});
       }
+      //
+      // Sprie.Render('sprie', { id: "bRP3" }, () => {})
+      // function openWidget(id) {
+      //   Sprie.Load('sprie', { id: 'bRP3', modelUrl: 'https://tryon-3dmodels.s3.eu-west-2.amazonaws.com/demo-final-models/K%26K_Neville_Tiger.glb'}, () => {});
+      // }
     </script>
     <script>
       document.addEventListener("SayHello:onChange", (e) =>
