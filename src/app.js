@@ -7,5 +7,5 @@ const Load3D = (sku) => {
     // sku = 'knk1';
     console.log('Loading Model ...');
     console.log({sku,apiKey});
-    Sprie.Load('sprie-key', { id:sku, apiKey }, () => {});
+    Sprie.Load('sprie', { id:sku, apiKey }, () => {});
 }
